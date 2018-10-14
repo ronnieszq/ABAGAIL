@@ -54,6 +54,6 @@ public class XORTest {
             System.out.println(patterns[i].getLabel());
             System.out.println(network.getOutputValues());
         }
-    } 
+    }
 
 }

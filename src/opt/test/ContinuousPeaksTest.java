@@ -33,7 +33,7 @@ import shared.FixedIterationTrainer;
  */
 public class ContinuousPeaksTest {
     /** The n value */
-    private static final int N = 60;
+    private static final int N = 80;
     /** The t value */
     private static final int T = N / 10;
     

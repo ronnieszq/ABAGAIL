@@ -9,7 +9,7 @@ public class ConvergenceTrainer implements Trainer {
     /** The default threshold */
     private static final double THRESHOLD = 1E-10;
     /** The maxium number of iterations */
-    private static final int MAX_ITERATIONS = 500;
+    private static final int MAX_ITERATIONS = 1000;
 
     /**
      * The trainer

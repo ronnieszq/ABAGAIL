@@ -172,7 +172,7 @@ public class PokerTest {
 
         /* RHC */
         // Simply run RHC as it doesn't have params
-        runRHC(10000, 100, true);
+        runRHC(10000, 100, false);
 
 
 //        /* SA */
@@ -181,7 +181,7 @@ public class PokerTest {
 //            determineSAParams(trainIterations);
 //        }
         // Run actual SA with best params here
-        runSA(10000, 100, best_temp, best_cooling, true);
+        runSA(10000, 100, best_temp, best_cooling, false);
 //
 //        /* GA */
 //        if (shouldFindGAParams) {
@@ -190,7 +190,7 @@ public class PokerTest {
 //
 //        }
         // Run actual GA with best params here
-        runGA(1000, 10, true);
+        runGA(10000, 100, false);
     }
 
 
@@ -996,7 +996,7 @@ public class PokerTest {
                 .label("baseline: Back-propagation")
                 .linestyle("--");
         plt.xlabel("Iterations");
-        plt.ylabel("Error");
+        plt.ylabel("Error (%)");
 //        plt.text(0.5, 0.2, "text");
         plt.title("Learning Curve - " + algName);
         plt.legend();

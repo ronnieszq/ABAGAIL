@@ -29,7 +29,7 @@ public class TravelingSalesmanRouteEvaluationFunction extends TravelingSalesmanE
             distance += getDistance(d.getDiscrete(i), d.getDiscrete(i+1));
         }
         distance += getDistance(d.getDiscrete(d.size() - 1), d.getDiscrete(0));
-        return 1/distance;
+        return distance;
     }
 
 

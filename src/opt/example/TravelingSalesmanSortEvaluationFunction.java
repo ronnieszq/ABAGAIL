@@ -35,7 +35,7 @@ public class TravelingSalesmanSortEvaluationFunction extends TravelingSalesmanEv
             distance += getDistance(order[i], order[i+1]);
         }
         distance += getDistance(order[order.length - 1], order[0]);
-        return 1/distance;
+        return distance;
     }
 
 }
